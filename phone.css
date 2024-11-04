@@ -1,0 +1,24 @@
+body {
+  flex-direction: column;
+  height: 78vh;
+}
+h1 {
+  margin-left: 0px;
+  width: auto;
+}
+.calculator {
+  margin-bottom: -153px;
+  margin-top: -51px;
+}
+@media (max-width: 632px) {
+  /*430px*/
+  h1 {
+    font-size: 4rem;
+  }
+  .calculator {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: -6px;
+    margin-top: 0px;
+  }
+}

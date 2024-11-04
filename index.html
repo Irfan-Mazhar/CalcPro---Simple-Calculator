@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalcPro</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1136px)"
+      href="phone.css"
+    />
+  </head>
+  <body>
+    <h1>Calculator for dummies!!!</h1>
+    <div class="calculator">
+      <input id="display" readonly />
+      <div class="keys">
+        <button onclick="cleardisplay('AC')" id="clear">AC</button>
+        <button onclick="sqrt()" class="op-button">√</button>
+        <button onclick="percentage('%')" class="op-button">%</button>
+        <button onclick="appendtodisplay('/')" class="op-button">/</button>
+        <button onclick="appendtodisplay('7')">7</button>
+        <button onclick="appendtodisplay('8')">8</button>
+        <button onclick="appendtodisplay('9')">9</button>
+        <button onclick="appendtodisplay('x')" class="op-button">x</button>
+        <button onclick="appendtodisplay('4')">4</button>
+        <button onclick="appendtodisplay('5')">5</button>
+        <button onclick="appendtodisplay('6')">6</button>
+        <button onclick="appendtodisplay('-')" class="op-button">-</button>
+        <button onclick="appendtodisplay('1')">1</button>
+        <button onclick="appendtodisplay('2')">2</button>
+        <button onclick="appendtodisplay('3')">3</button>
+        <button onclick="appendtodisplay('+')" class="op-button">+</button>
+        <button onclick="appendtodisplay('0')">0</button>
+        <button onclick="appendtodisplay('.')">.</button>
+        <button onclick="backspace('«')" id="backspace" class="op-button">
+          DEL
+        </button>
+        <button onclick="calculate('=')" class="op-button">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
