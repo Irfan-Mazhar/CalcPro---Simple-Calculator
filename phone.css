@@ -1,47 +1,27 @@
-/* Base styles for responsiveness */
 body {
   flex-direction: column;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
+  height: 78vh;
 }
-
 h1 {
-  margin: 0;
+  margin-left: 0px;
   width: auto;
-  font-size: 3rem; /* Smaller default font size */
 }
-
 .calculator {
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
-  margin-top: 10px;
-  padding: 10px;
+  margin-bottom: -153px;
+  margin-top: -51px;
 }
-
-.keys {
-  gap: 10px;
-}
-
-/* Responsive adjustments for smaller devices */
-@media (max-width: 768px) {
+@media (max-width: 632px) {
+  /*430px*/
   h1 {
-      font-size: 2.5rem; /* Reduce font size */
+    font-size: 4rem;
   }
   .calculator {
-      margin-top: 5px;
-  }
-  #display {
-      font-size: 2.5rem; /* Reduce display size */
-      padding: 15px;
-  }
-  button {
-      height: 50px;
-      font-size: 1.5rem; /* Reduce button font size */
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: -6px;
+    margin-top: 0px;
   }
 }
-
 @media (max-width: 480px) {
   h1 {
       font-size: 2rem;
