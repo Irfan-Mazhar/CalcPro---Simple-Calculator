@@ -13,12 +13,12 @@ h1 {
 @media (max-width: 632px) {
   /*430px*/
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .calculator {
     margin-left: 6px;
     margin-right: 6px;
-    margin-bottom: -6px;
+    margin-bottom: -15px;
     margin-top: 0px;
   }
 }
