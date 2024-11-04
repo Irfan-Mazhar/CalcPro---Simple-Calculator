@@ -13,12 +13,47 @@ h1 {
 @media (max-width: 632px) {
   /*430px*/
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .calculator {
     margin-left: 6px;
     margin-right: 6px;
     margin-bottom: -6px;
     margin-top: 0px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2rem;
+  }
+  .calculator {
+      width: 95%;
+  }
+  #display {
+      font-size: 2rem;
+      padding: 10px;
+  }
+  button {
+      height: 45px;
+      font-size: 1.2rem;
+  }
+}
+
+/* Extra small devices, e.g., Pixel 7a */
+@media (max-width: 360px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+  .calculator {
+      width: 100%;
+      padding: 5px;
+  }
+  #display {
+      font-size: 1.8rem;
+      padding: 8px;
+  }
+  button {
+      height: 40px;
+      font-size: 1rem;
   }
 }
