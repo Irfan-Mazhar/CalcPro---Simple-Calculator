@@ -1,24 +1,79 @@
+/* Base styles for responsiveness */
 body {
   flex-direction: column;
-  height: 78vh;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
+
 h1 {
-  margin-left: 0px;
+  margin: 0;
   width: auto;
+  font-size: 3rem; /* Smaller default font size */
 }
+
 .calculator {
-  margin-bottom: -153px;
-  margin-top: -51px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
 }
-@media (max-width: 632px) {
-  /*430px*/
+
+.keys {
+  gap: 10px;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+      font-size: 2.5rem; /* Reduce font size */
   }
   .calculator {
-    margin-left: 6px;
-    margin-right: 6px;
-    margin-bottom: -15px;
-    margin-top: 0px;
+      margin-top: 5px;
+  }
+  #display {
+      font-size: 2.5rem; /* Reduce display size */
+      padding: 15px;
+  }
+  button {
+      height: 50px;
+      font-size: 1.5rem; /* Reduce button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2rem;
+  }
+  .calculator {
+      width: 95%;
+  }
+  #display {
+      font-size: 2rem;
+      padding: 10px;
+  }
+  button {
+      height: 45px;
+      font-size: 1.2rem;
+  }
+}
+
+/* Extra small devices, e.g., Pixel 7a */
+@media (max-width: 360px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+  .calculator {
+      width: 100%;
+      padding: 5px;
+  }
+  #display {
+      font-size: 1.8rem;
+      padding: 8px;
+  }
+  button {
+      height: 40px;
+      font-size: 1rem;
   }
 }
